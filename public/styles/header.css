@@ -1,0 +1,16 @@
+.nur {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  background-color: rgb(211, 123, 123);
+}
+#yup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

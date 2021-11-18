@@ -1,0 +1,91 @@
+.new-tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  font-family: "Bungee", cursive;
+  background-color: #4056a1;
+  color: white;
+}
+#tweet-text {
+  border: none;
+  border-bottom: 5px solid black;
+  margin-bottom: 1em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.newColor {
+  color: red;
+}
+.counter {
+  float: right;
+  padding-right: 10px;
+}
+button:hover {
+  transform: scale(1.04, 1);
+  background-color: rgb(10, 140, 226);
+  /* text-decoration: red; */
+}
+.command {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.monster {
+  display: flex;
+}
+.border {
+  height: 300px;
+  border: 3px solid black;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.border:hover {
+  box-shadow: 10px 10px grey;
+}
+.dinosar {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+}
+hr {
+  width: 100%;
+  background-color: black;
+}
+#main {
+  margin: 2em;
+}
+#span1 {
+  margin: 0.5em;
+}
+#span2 {
+  margin: 0.5em;
+}
+#span3 {
+  margin: 0.5em;
+}
+#span1:hover {
+  transform: scale(1.04, 1);
+  color: rgb(10, 140, 226);
+  /* text-decoration: red; */
+}
+#span2:hover {
+  transform: scale(1.04, 1);
+  color: rgb(10, 140, 226);
+  /* text-decoration: red; */
+}
+#span3:hover {
+  transform: scale(1.04, 1);
+  color: rgb(10, 140, 226);
+  /* text-decoration: red; */
+}
+#image {
+  margin: 4px;
+}
