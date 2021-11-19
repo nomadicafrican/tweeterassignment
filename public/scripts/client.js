@@ -11,6 +11,7 @@ $(document).ready(function () {
     });
   };
   loadTweets();
+
   const tweetData = [
     {
       user: {
@@ -50,7 +51,8 @@ $(document).ready(function () {
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
     };
-    const $something = `
+
+    const $htmlFile = `
       <article class = "border">
           <header class= 'command'>
             <div class= 'monster'>
@@ -75,7 +77,7 @@ $(document).ready(function () {
           </footer>
         </article>
       `;
-    return $something;
+    return $htmlFile;
   };
 
   $("#form").on("submit", function (event) {
