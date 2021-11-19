@@ -8,6 +8,7 @@ $(document).ready(function () {
   const loadTweets = function () {
     $.ajax("/tweets").then(function (res) {
       renderTweets(res);
+      $(".counter").text(140);
     });
   };
   loadTweets();
