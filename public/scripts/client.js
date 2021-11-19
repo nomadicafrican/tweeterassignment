@@ -81,11 +81,18 @@ $(document).ready(function () {
   $("#form").on("submit", function (event) {
     event.preventDefault();
     const letterCounter = $("#tweet-text").val().trim().length;
+    $("#error-message").hide();
     if (letterCounter === 0) {
-      return alert("please enter tweet");
+      $("#error-message").text("tweet cannot be empty");
+      $("#error-message").slideDown("slow");
+      $("#error-message").delay(2500).slideUp("slow");
+      return;
     }
     if (letterCounter > 140) {
-      return alert("Going over text limit");
+      $("#error-message").text("Tweet must be shorter than 140 characters");
+      $("#error-message").slideDown("slow");
+      $("#error-message").delay(2500).slideUp("slow");
+      return;
     }
     const serializedFormData = $(this).serialize();
     $.ajax("/tweets", { method: "POST", data: serializedFormData }).then(() => {

@@ -89,3 +89,7 @@ hr {
 #image {
   margin: 4px;
 }
+#error-message {
+  color: aliceblue;
+  background-color: rgb(112, 42, 42);
+}

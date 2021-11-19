@@ -2,101 +2,108 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Tweeter - Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type = "text/css"/>
-    <link rel ="stylesheet" href = "/styles/header.css" type ="text/css"/>
-    <link rel ="stylesheet" href = "/styles/newtweet.css" type ="text/css"/>
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/newtweet.css" type="text/css" />
 
-  
-    
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <div class= 'nav'>
-        <span STYLE="font-family:'Bungee'"id= "name">Tweeter </span>
-        <div id= "tweet">
+      <div class="nav">
+        <span STYLE="font-family:'Bungee'" id="name">Tweeter </span>
+        <div id="tweet">
           <span>New tweet</span>
           <i class="fas fa-angle-double-down"> </i>
         </div>
       </div>
     </nav>
-  <header class = 'nur'>
-      <div id='yup'>
-         <!-- <img src="/images/DOYOUKNOW.png">  -->
-      </div>
-      <br>
-      <div id= "nup">
-          <h2>Your Name</h2>
-      </div>
-  </header>
- 
+    <!--div that has content of page-->
+    <div id="content">
+      <!--Start of proflie picture and name-->
+      <header class="header">
+        <div id="default-image">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div id="default-name">
+          <h2>Ammar Ali</h2>
+        </div>
+      </header>
+      <!--End of profile picture and name-->
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <p id= 'sir'></p>
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id = "form" action= "/tweets" method="post">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-        <div id = 'tweets-container'> </div>
-      <!-- <article class = "border">
-
-        <header class= 'command'>
-        
-          <div class= 'monster'> 
-            <div><i id = 'image' class="far fa-user-circle"></i> </div>
-            <span></span> 
-          </div>
-          <span id= "username"></span>
-        </header>
-
-        <main id= 'main'>
-         <span></span>
-         <hr>
-        </main>
-
-        <footer class ='option'>
-          <div class = 'dinosar'>
-            <span id = 'days'> </span>
-            <div class ='icons'>
-              <span id="span1"><i class="fa-solid fa-flag"></i></span>
-              <span id = "span2"><i class="fa-solid fa-retweet"></i></span>
-              <span id = "span3"><i class="fa-solid fa-heart"></i></span>
+      <!-- Page-specific (main) content here -->
+      <div id="div1">
+        <main class="container">
+          <h2>Compose Tweet</h2>
+          <div id="error-message"></div>
+          <form id="form" action="/tweets" method="post">
+            <textarea
+              name="text"
+              id="tweet-text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <div>
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
             </div>
-          </div>
-
-        </footer>
-
-      </article> -->
-    </main>
+          </form>
+          <div id="tweets-container"></div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

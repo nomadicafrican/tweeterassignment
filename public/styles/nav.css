@@ -1,11 +1,7 @@
 nav {
-  background-color: #4056a1;
   height: 120px;
   width: 100%;
-  color: #ffffff;
   z-index: 1;
-  position: sticky;
-  top: 0%;
 }
 .nav {
   display: flex;

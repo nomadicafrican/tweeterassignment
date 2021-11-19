@@ -1,15 +1,15 @@
-.nur {
+.header {
   display: flex;
   height: 400px;
   flex-direction: column;
-  background-color: rgb(211, 123, 123);
+  background-color: #f4f1ec;
 }
-#yup {
+#default-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#nup {
+#default-name {
   display: flex;
   align-items: center;
   justify-content: center;
