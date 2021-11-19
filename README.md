@@ -14,7 +14,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ![Desktop View](https://github.com/nomadicafrican/tweeterassignment/blob/master/public/images/Screen%20Shot%202021-11-18%20at%207.35.28%20PM.png?raw=true)
 ![Mobile view](https://github.com/nomadicafrican/tweeterassignment/blob/master/public/images/Screen%20Shot%202021-11-18%20at%207.39.59%20PM.png?raw=true)
-![Tweeting on Mobile View](https://github.com/nomadicafrican/tweeterassignment/blob/master/public/images/Screen%20Shot%202021-11-18%20at%208.01.08%20PM.png?raw=true)
 
 ## Dependencies
 
